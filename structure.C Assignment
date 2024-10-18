@@ -1,0 +1,33 @@
+//c structures
+#include <stdio.h>
+#include <string.h>
+struct book{
+    char title[30];
+    char author[30];
+    int publicationyear;
+    char ISBN[13];
+    float price;
+}person1;
+int main() {
+    // struct person1;
+   
+   printf("Enter the title:");
+   scanf("%s",&person1.title);
+   printf("Enter the author:");
+   scanf("%s",&person1.author);
+   printf("Enter the publication year:");
+   scanf("%d",&person1.publicationyear);
+   printf("Enter the isbn:");
+   scanf("%s",&person1.ISBN);
+   printf("Enter the price:");
+   scanf("%.2f",&person1.price);
+  
+  
+    printf("Title:%s\n",person1.title);
+    printf("Author:%s\n",person1.author);
+    printf("Publication Year:%d\n",person1.publicationyear);
+    printf("ISBN:%s\n",person1.ISBN);
+    printf("Price:%f\n",person1.price);
+    
+    return 0;
+}
